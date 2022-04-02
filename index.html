@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animated Swiping Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center"><img class="slide-card-img-top" src="images/dhoni.jpg" alt="dhoni">
+            <div class="slide-card-body">
+              <h5>MS DHONI <br />
+                <span> CHENNAI SUPER KINGS </span>
+              </h5>
+              <p class="slide-card-text">“ Mahendra Singh Dhoni is an Indian professional cricketer who was captain of the Indian national cricket team in limited-overs formats from 2007-2017. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center"><img class="slide-card-img-top" src="images/rohit.jpg" alt="rohit">
+            <div class="slide-card-body">
+              <h5>ROHIT SHARMA <br />
+                <span> MUMBAI INDIANS </span>
+              </h5>
+              <p class="slide-card-text">“ Rohit Gurunath Sharma is an Indian international cricketer who is the current captain of the Indian national team. A right-handed batsman. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center">
+            <img class="slide-card-img-top" src="images/kohli.jpg" alt="kohli">
+            <div class="slide-card-body">
+              <h5>VIRAT KOHLI<br />
+                <span> ROYAL CHALLENGERS BANGALORE </span>
+              </h5>
+              <p class="slide-card-text">“ Virat Kohli is an Indian international cricketer and former captain of the India national cricket team. He plays for RCB in the Indian Premier League. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <div class="slide-card text-center"><img class="slide-card-img-top" src="images/rahul.jpg" alt="rahul">
+            <div class="slide-card-body">
+              <h5>KL RAHUL <br />
+                <span> LUCKNOW SUPER GIANTS </span>
+              </h5>
+              <p class="slide-card-text">“ Kananur Lokesh Rahul is an Indian international cricketer. He is the current vice-captain of the India national cricket team in all formats. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      autoplay:
+      {
+        delay: 2000,
+      },
+      loop: true,
+
+      // Default parameters
+      slidesPerView: 1,
+      spaceBetween: 10,
+      centeredSlides: true,
+      roundLengths: true,
+      loop: true,
+      loopAdditionalSlides: 30,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 0
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 0
+        }
+      }
+    });
+
+  </script>
+</body>
+
+</html>
